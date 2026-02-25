@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+<title>Làng Rau Sạch Thành Trung</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f2fff2;
+    line-height:1.6;
+}
+
+/* ===== HERO ===== */
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url("https://scontent.fdad1-2.fna.fbcdn.net/v/t39.30808-6/488894674_1092188539617530_8226712525530154066_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEqbVlIuz4Pii--SSA2KOqBUGfJ3Rh3JGxQZ8ndGHckbJ2hDWh8qsBz7H6RiQdxN-gZ4zrOZlgjynIQtFBT-gBA&_nc_ohc=69kE2jwuKCkQ7kNvwHi5Pfb&_nc_oc=Adl4b6IxsdrQt2gW_sKfnctdOyqRA_83qafJPeoNBqV170CCZoT1gaNKpiE8zQIvXIA&_nc_zt=23&_nc_ht=scontent.fdad1-2.fna&_nc_gid=kSTpDFCYvIAuuWhXMpCbKQ&oh=00_AfstTf3sgj7LUU56QjF7umDCNiSU1SAQlGaE6EmtJckyVw&oe=69A3576E");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+    background:#1b5e20;
+    display:flex;
+    justify-content:center;
+    padding:12px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#c8e6c9;
+}
+
+/* ===== SECTION ===== */
+.section{
+    max-width:1100px;
+    margin:60px auto;
+    padding:30px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.section h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+    border-left:6px solid #43a047;
+    padding-left:10px;
+}
+
+.section img{
+    width:100%;
+    max-height:400px;
+    object-fit:cover;
+    border-radius:8px;
+    margin:20px 0;
+}
+
+/* ===== TABLE ===== */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+th{
+    background:#4CAF50;
+    color:white;
+}
+
+/* ===== GALLERY ===== */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f9fff9;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card img{
+    height:200px;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    margin-top:10px;
+    color:#2e7d32;
+}
+
+/* ===== FORM ===== */
+input[type=text],textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+input[type=text]:focus,textarea:focus{
+    border-color:#2e7d32;
+    outline:none;
+}
+
+input[type=submit]{
+    background:#2e7d32;
+    color:white;
+    padding:12px 24px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+input[type=submit]:hover{
+    background:#1b5e20;
+}
+
+
+#topBtn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#2e7d32;
+    color:white;
+    padding:10px 15px;
+    border-radius:50%;
+    cursor:pointer;
+    display:none;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <h1>Làng Rau Sạch Thành Trung</h1>
+    <p>Nông nghiệp sạch – Vì sức khỏe cộng đồng</p>
+</div>
+
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#sanpham">Sản phẩm</a>
+    <a href="#thanhtuu">Thành tựu</a>
+    <a href="#thuvienrau">Thư viện rau</a>
+    <a href="#diachi">Địa chỉ</a>
+    <a href="#lienhedathang">Liên hệ</a>
+</nav>
+
+<!-- ===== GIỚI THIỆU ===== -->
+<div class="section" id="gioithieu">
+<h2>Giới thiệu</h2>
+<p>Nằm ven bờ sông Hương thơ mộng, làng Thành Trung (phường Hóa Châu, TP.Huế) nổi tiếng với nghề trồng rau màu truyền thống. Làng rau sạch Thành Trung là khu sản xuất nông nghiệp theo hướng an toàn, chuyên cung cấp các loại rau xanh đạt tiêu chuẩn vệ sinh thực phẩm. Nhờ được bồi đắp phù sa màu mỡ, rau nơi đây luôn xanh tốt và giàu dinh dưỡng.</p>
+</div>
+
+<!-- ===== SẢN PHẨM ===== -->
+<div class="section" id="sanpham">
+<h2>Một số loài rau phổ biến</h2>
+<table>
+<tr>
+<th>STT</th>
+<th>Tên loại rau</th>
+<th>Mô tả ngắn</th>
+<th>Thời vụ chính</th>
+</tr>
+<tr>
+<td>1</td>
+<td>Rau cải các loại</td>
+<td>Cải ngọt, cải xanh, cải thìa</td>
+<td>Quanh năm</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Xà lách & Rau thơm</td>
+<td>Xà lách mỡ, húng quế, ngò rí</td>
+<td>Đông - Xuân</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Rau muống, Mồng tơi</td>
+<td>Phù hợp mùa nóng</td>
+<td>Hè - Thu</td>
+</tr>
+</table>
+</div>
+
+<!-- ===== THÀNH TỰU ===== -->
+<div class="section" id="thanhtuu">
+<h2>Thành tựu đạt được</h2>
+<ul>
+<li>Đạt tiêu chuẩn rau an toàn</li>
+<li>Cung cấp cho nhiều siêu thị trên toàn tỉnh và trường học</li>
+<li>Nâng cao thu nhập cho người dân</li>
+</ul>
+</div>
+
+<!-- ===== GALLERY ===== -->
+<div class="section" id="thuvienrau">
+<h2>Hình ảnh rau tiêu biểu</h2>
+<div class="gallery">
+<div class="card">
+<img src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/635184436_1552658629136727_766974112186562389_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFzqjMrtoDqolQ4L7rpzPX053iWZtBfRgLneJZm0F9GAuAtZr5C5q7ANGtVFdKsuMpiXYm7j3XewnKp6FciYg7x&_nc_ohc=Cn0lBmBOQ3UQ7kNvwFSkjck&_nc_oc=Admc0II3oTkx_emv4IBsNT9IYMw0HV1TO7BzrkpZ3Epa94eyNLcmUbMW8t3ttjtEVRU&_nc_zt=23&_nc_ht=scontent.fdad2-1.fna&oh=03_Q7cD4gHrxcvkdNP09_CGG6EN_9nmc2EGOjvO7cmtnINeupmHWg&oe=69C5076D">
+<h3>Rau cải xanh</h3>
+</div>
+<div class="card">
+<img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t39.30808-6/469049682_3500598996912970_7540025919766048607_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeG7bjgg0gaDOuMYB4H31QebX47GXk7ObW9fjsZeTs5tbx75VUaZNrT1MJbWEDX_XcAqodHi0w96A286nID57tgh&_nc_ohc=92ZclsGOTEkQ7kNvwGHAN_3&_nc_oc=AdnNbbrKu8sKNXhGnzkRyh0iVoq4rryaKa2KFU5ObE4602kxblekdSNaU_uGkePr5fs&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=6L7kLHdBq1Wzfg5sy6BbYw&oh=00_AfvTQiiG2-6pCQ75Jpa4i7t-r1nwG02cbSA8wzbjvOAlxQ&oe=69A348C9">
+<h3>Xà lách</h3>
+</div>
+<div class="card">
+<img src="https://scontent.fdad1-3.fna.fbcdn.net/v/t1.6435-9/73004908_2158677741105109_3878811980361891840_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeEZSN63RO0dTUmq_ioLmpZC-uPCCiWK4en648IKJYrh6Vy98Z7w8zFtHvJacp9BU6svBMK-nTzvtCDplc6PubPe&_nc_ohc=nilGt2ZRrO0Q7kNvwEjqVKk&_nc_oc=AdmPfuHbD2EUfD2nNi2EM6khV_FUc_8xsDBROFDPEHq1_h8LOs8UUxmGjt7rdV2jbK0&_nc_zt=23&_nc_ht=scontent.fdad1-3.fna&_nc_gid=SUQ6T2YZ0xqjUov8bbVTZg&oh=00_Afu5vHEw7YcdoZvsHljxXMv2BRi_p20288LLE2KxSkjioQ&oe=69C51638">
+<h3>Rau mồng tơi</h3>
+</div>
+</div>
+</div>
+
+<!-- ===== ĐỊA CHỈ ===== -->
+<div class="section" id="diachi">
+<h2>Địa chỉ</h2>
+<p>Làng Thành Trung, Hóa Châu, Thừa Thiên Huế</p>
+<p>Điện thoại: 090 525 13 64</p>
+<p>Email: langrausachthanhtrunghue@gmail.com</p>
+</div>
+
+<!-- ===== LIÊN HỆ ===== -->
+<div class="section" id="lienhedathang">
+<h2>Đăng ký nhận tin hoặc đặt hàng</h2>
+<form>
+<input type="text" placeholder="Họ và tên">
+<textarea rows="5" placeholder="Nội dung..."></textarea>
+<input type="submit" value="GỬI THÔNG TIN NGAY">
+</form>
+</div>
+
+<div id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<footer>
+© 2026 Làng Rau Sạch Thành Trung
+</footer>
+
+<script>
+window.onscroll = function(){
+if(document.documentElement.scrollTop > 300){
+document.getElementById("topBtn").style.display="block";
+}else{
+document.getElementById("topBtn").style.display="none";
+}
+}
+</script>
+
+</body>
+</html>
